@@ -3,9 +3,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './features/home/home.component';
 
 const routes: Routes = [
-  {path:'',redirectTo:'home',pathMatch:'full'},
-  {path:'home',component:HomeComponent},
-
+  {path:'',component:HomeComponent},
+  {path:'features',loadChildren:()=>import('./features/features-routing.module').then(m=>m.FeaturesRoutingModule)}
 ];
 
 @NgModule({

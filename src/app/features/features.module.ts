@@ -7,6 +7,9 @@ import { SharedModule } from '../shared/shared.module';
 import { AboutComponent } from './about/about.component';
 import { TeamComponent } from './team/team.component';
 import { PricingComponent } from './pricing/pricing.component';
+import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
+import { ContactComponent } from './contact/contact.component';
 
 
 @NgModule({
@@ -14,7 +17,10 @@ import { PricingComponent } from './pricing/pricing.component';
     HomeComponent,
     AboutComponent,
     TeamComponent,
-    PricingComponent
+    PricingComponent,
+    LoginComponent,
+    RegisterComponent,
+    ContactComponent
   ],
   imports: [
     CommonModule,

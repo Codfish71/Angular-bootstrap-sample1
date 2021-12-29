@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SharedModule } from './shared/shared.module';
 import { FeaturesModule } from './features/features.module';
+import { RouterModule } from '@angular/router';
 @NgModule({
   declarations: [
     AppComponent
@@ -12,7 +13,8 @@ import { FeaturesModule } from './features/features.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    SharedModule  
+    SharedModule,
+    RouterModule  
   ],
   providers: [],
   bootstrap: [AppComponent]

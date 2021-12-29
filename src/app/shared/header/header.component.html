@@ -15,23 +15,45 @@
   <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
     <ul class="navbar-nav mr-auto mt-2 mt-lg-0 col-md-6">
       <li class="nav-item active">
-        <a class="nav-link text-primary" routerLink="/home">Home</a>
+        <a
+          class="nav-link text-primary"
+          routerLink="/"
+          routerLinkActive="active"
+          >Home</a
+        >
       </li>
       <li class="nav-item active">
-        <a class="nav-link" href="#">About</a>
+        <a
+          class="nav-link"
+          routerLink="/features/about"
+          routerLinkActive="active"
+          >About</a
+        >
       </li>
       <li class="nav-item active">
-        <a class="nav-link" href="#">Team</a>
+        <a class="nav-link" routerLink="/features/team">Team</a>
       </li>
       <li class="nav-item active">
-        <a class="nav-link" href="#">Pricing</a>
+        <a
+          class="nav-link"
+          routerLink="/features/pricing"
+          routerLinkActive="active"
+          >Pricing</a
+        >
       </li>
-      <a class="nav-link" href="#">Contact</a>
+      <a
+        class="nav-link"
+        routerLink="/features/contact"
+        routerLinkActive="active"
+        >Contact</a
+      >
       <input
-        type="submit"
+        type="button"
         class="btn btn-primary"
         value="Get Started"
         style="height: 40px"
+        routerLink="features"
+        routerLinkActive="active"
       />
     </ul>
   </div>
